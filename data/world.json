@@ -1,0 +1,620 @@
+{
+ "customers": [
+  {
+   "id": "C1",
+   "name": "Priya Nair",
+   "email": "priya.nair@example.com"
+  },
+  {
+   "id": "C2",
+   "name": "Tom Becker",
+   "email": "tom.becker@example.com"
+  },
+  {
+   "id": "C3",
+   "name": "Aisha Khan",
+   "email": "aisha.khan@example.com"
+  },
+  {
+   "id": "C4",
+   "name": "Diego Ramos",
+   "email": "diego.ramos@example.com"
+  },
+  {
+   "id": "C5",
+   "name": "Mei Lin",
+   "email": "mei.lin@example.com"
+  },
+  {
+   "id": "C6",
+   "name": "Sam Okafor",
+   "email": "sam.okafor@example.com"
+  },
+  {
+   "id": "C7",
+   "name": "Lena Fischer",
+   "email": "lena.fischer@example.com"
+  },
+  {
+   "id": "C8",
+   "name": "Omar Haddad",
+   "email": "omar.haddad@example.com"
+  }
+ ],
+ "orders": [
+  {
+   "id": "A1001",
+   "customer_id": "C1",
+   "items": [
+    {
+     "sku": "MUG-01",
+     "name": "ceramic mug",
+     "qty": 2,
+     "price": 14.5
+    }
+   ],
+   "total": 29.0,
+   "status": "delivered",
+   "delivered_at": "2026-09-28",
+   "address": "14 Park Lane, Pune 411001"
+  },
+  {
+   "id": "A1002",
+   "customer_id": "C2",
+   "items": [
+    {
+     "sku": "LMP-02",
+     "name": "desk lamp",
+     "qty": 1,
+     "price": 89.99
+    }
+   ],
+   "total": 89.99,
+   "status": "delivered",
+   "delivered_at": "2026-09-20",
+   "address": "3 Mill Road, Cambridge CB1 2AD"
+  },
+  {
+   "id": "A1003",
+   "customer_id": "C3",
+   "items": [
+    {
+     "sku": "HPH-03",
+     "name": "headphones",
+     "qty": 1,
+     "price": 59.0
+    }
+   ],
+   "total": 59.0,
+   "status": "delivered",
+   "delivered_at": "2026-10-01",
+   "address": "88 Canal St, Manchester M1 3HE"
+  },
+  {
+   "id": "A1004",
+   "customer_id": "C4",
+   "items": [
+    {
+     "sku": "BPK-04",
+     "name": "backpack",
+     "qty": 1,
+     "price": 120.0
+    }
+   ],
+   "total": 120.0,
+   "status": "delivered",
+   "delivered_at": "2026-09-10",
+   "address": "Calle Mayor 5, 28013 Madrid"
+  },
+  {
+   "id": "A1005",
+   "customer_id": "C5",
+   "items": [
+    {
+     "sku": "KTL-05",
+     "name": "kettle",
+     "qty": 1,
+     "price": 45.5
+    }
+   ],
+   "total": 45.5,
+   "status": "delivered",
+   "delivered_at": "2026-09-30",
+   "address": "9 Orchard Rd, Singapore 238823"
+  },
+  {
+   "id": "A1006",
+   "customer_id": "C6",
+   "items": [
+    {
+     "sku": "NBK-06",
+     "name": "notebook",
+     "qty": 3,
+     "price": 8.0
+    }
+   ],
+   "total": 24.0,
+   "status": "delivered",
+   "delivered_at": "2026-09-25",
+   "address": "21 Allen Ave, Lagos 100271"
+  },
+  {
+   "id": "A1101",
+   "customer_id": "C7",
+   "items": [
+    {
+     "sku": "MUG-01",
+     "name": "ceramic mug",
+     "qty": 1,
+     "price": 14.5
+    },
+    {
+     "sku": "TPT-11",
+     "name": "teapot",
+     "qty": 1,
+     "price": 38.0
+    }
+   ],
+   "total": 52.5,
+   "status": "delivered",
+   "delivered_at": "2026-09-29",
+   "address": "Torstrasse 40, 10119 Berlin"
+  },
+  {
+   "id": "A1102",
+   "customer_id": "C8",
+   "items": [
+    {
+     "sku": "CHR-12",
+     "name": "chair",
+     "qty": 1,
+     "price": 149.0
+    },
+    {
+     "sku": "CSH-12",
+     "name": "cushion",
+     "qty": 1,
+     "price": 25.0
+    }
+   ],
+   "total": 174.0,
+   "status": "delivered",
+   "delivered_at": "2026-09-22",
+   "address": "Al Wasl Rd 12, Dubai"
+  },
+  {
+   "id": "A1103",
+   "customer_id": "C1",
+   "items": [
+    {
+     "sku": "CDL-13",
+     "name": "candle",
+     "qty": 2,
+     "price": 12.0
+    },
+    {
+     "sku": "VAS-13",
+     "name": "vase",
+     "qty": 1,
+     "price": 40.0
+    }
+   ],
+   "total": 64.0,
+   "status": "delivered",
+   "delivered_at": "2026-09-27",
+   "address": "14 Park Lane, Pune 411001"
+  },
+  {
+   "id": "A1201",
+   "customer_id": "C2",
+   "items": [
+    {
+     "sku": "SPK-21",
+     "name": "speaker",
+     "qty": 1,
+     "price": 75.0
+    }
+   ],
+   "total": 75.0,
+   "status": "delivered",
+   "delivered_at": "2026-08-15",
+   "address": "3 Mill Road, Cambridge CB1 2AD"
+  },
+  {
+   "id": "A1202",
+   "customer_id": "C3",
+   "items": [
+    {
+     "sku": "BLN-22",
+     "name": "blender",
+     "qty": 1,
+     "price": 65.0
+    }
+   ],
+   "total": 65.0,
+   "status": "delivered",
+   "delivered_at": "2026-08-28",
+   "address": "88 Canal St, Manchester M1 3HE"
+  },
+  {
+   "id": "A1203",
+   "customer_id": "C5",
+   "items": [
+    {
+     "sku": "JKT-23",
+     "name": "jacket",
+     "qty": 1,
+     "price": 110.0
+    }
+   ],
+   "total": 110.0,
+   "status": "delivered",
+   "delivered_at": "2026-09-04",
+   "address": "9 Orchard Rd, Singapore 238823"
+  },
+  {
+   "id": "A1301",
+   "customer_id": "C4",
+   "items": [
+    {
+     "sku": "MON-31",
+     "name": "monitor",
+     "qty": 1,
+     "price": 349.0
+    }
+   ],
+   "total": 349.0,
+   "status": "delivered",
+   "delivered_at": "2026-09-26",
+   "address": "Calle Mayor 5, 28013 Madrid"
+  },
+  {
+   "id": "A1302",
+   "customer_id": "C6",
+   "items": [
+    {
+     "sku": "HLM-32",
+     "name": "bike helmet",
+     "qty": 1,
+     "price": 89.0
+    },
+    {
+     "sku": "LGT-32",
+     "name": "bike lights",
+     "qty": 1,
+     "price": 129.0
+    }
+   ],
+   "total": 218.0,
+   "status": "delivered",
+   "delivered_at": "2026-09-30",
+   "address": "21 Allen Ave, Lagos 100271"
+  },
+  {
+   "id": "A1303",
+   "customer_id": "C8",
+   "items": [
+    {
+     "sku": "ESP-33",
+     "name": "espresso machine",
+     "qty": 1,
+     "price": 499.0
+    }
+   ],
+   "total": 499.0,
+   "status": "delivered",
+   "delivered_at": "2026-10-02",
+   "address": "Al Wasl Rd 12, Dubai"
+  },
+  {
+   "id": "A1401",
+   "customer_id": "C1",
+   "items": [
+    {
+     "sku": "TOS-41",
+     "name": "toaster",
+     "qty": 1,
+     "price": 55.0
+    }
+   ],
+   "total": 55.0,
+   "status": "delivered",
+   "delivered_at": "2026-09-29",
+   "address": "14 Park Lane, Pune 411001"
+  },
+  {
+   "id": "A1402",
+   "customer_id": "C7",
+   "items": [
+    {
+     "sku": "RUG-42",
+     "name": "rug",
+     "qty": 1,
+     "price": 140.0
+    }
+   ],
+   "total": 140.0,
+   "status": "placed",
+   "delivered_at": null,
+   "address": "Torstrasse 40, 10119 Berlin"
+  },
+  {
+   "id": "A1403",
+   "customer_id": "C3",
+   "items": [
+    {
+     "sku": "PLT-43",
+     "name": "plant pot",
+     "qty": 1,
+     "price": 22.0
+    }
+   ],
+   "total": 22.0,
+   "status": "placed",
+   "delivered_at": null,
+   "address": "88 Canal St, Manchester M1 3HE"
+  },
+  {
+   "id": "A1404",
+   "customer_id": "C5",
+   "items": [
+    {
+     "sku": "FRM-44",
+     "name": "photo frame",
+     "qty": 1,
+     "price": 30.0
+    }
+   ],
+   "total": 30.0,
+   "status": "delivered",
+   "delivered_at": "2026-10-01",
+   "address": "9 Orchard Rd, Singapore 238823"
+  },
+  {
+   "id": "A1501",
+   "customer_id": "C2",
+   "items": [
+    {
+     "sku": "BOK-51",
+     "name": "cookbook",
+     "qty": 1,
+     "price": 32.0
+    },
+    {
+     "sku": "APR-51",
+     "name": "apron",
+     "qty": 1,
+     "price": 32.0
+    }
+   ],
+   "total": 64.0,
+   "status": "placed",
+   "delivered_at": null,
+   "address": "3 Mill Road, Cambridge CB1 2AD"
+  },
+  {
+   "id": "A1502",
+   "customer_id": "C6",
+   "items": [
+    {
+     "sku": "YGA-52",
+     "name": "yoga mat",
+     "qty": 1,
+     "price": 40.0
+    }
+   ],
+   "total": 40.0,
+   "status": "placed",
+   "delivered_at": null,
+   "address": "21 Allen Ave, Lagos 100271"
+  },
+  {
+   "id": "A1503",
+   "customer_id": "C8",
+   "items": [
+    {
+     "sku": "TWL-53",
+     "name": "towel set",
+     "qty": 1,
+     "price": 58.0
+    }
+   ],
+   "total": 58.0,
+   "status": "placed",
+   "delivered_at": null,
+   "address": "Al Wasl Rd 12, Dubai"
+  },
+  {
+   "id": "A1601",
+   "customer_id": "C1",
+   "items": [
+    {
+     "sku": "SHO-61",
+     "name": "trainers",
+     "qty": 1,
+     "price": 95.0
+    }
+   ],
+   "total": 95.0,
+   "status": "shipped",
+   "delivered_at": null,
+   "address": "14 Park Lane, Pune 411001"
+  },
+  {
+   "id": "A1602",
+   "customer_id": "C4",
+   "items": [
+    {
+     "sku": "CAM-62",
+     "name": "action camera",
+     "qty": 1,
+     "price": 180.0
+    }
+   ],
+   "total": 180.0,
+   "status": "shipped",
+   "delivered_at": null,
+   "address": "Calle Mayor 5, 28013 Madrid"
+  },
+  {
+   "id": "A1603",
+   "customer_id": "C7",
+   "items": [
+    {
+     "sku": "GLS-63",
+     "name": "wine glasses",
+     "qty": 1,
+     "price": 48.0
+    }
+   ],
+   "total": 48.0,
+   "status": "shipped",
+   "delivered_at": null,
+   "address": "Torstrasse 40, 10119 Berlin"
+  },
+  {
+   "id": "A1701",
+   "customer_id": "C3",
+   "items": [
+    {
+     "sku": "LMP-71",
+     "name": "floor lamp",
+     "qty": 1,
+     "price": 70.0
+    }
+   ],
+   "total": 70.0,
+   "status": "placed",
+   "delivered_at": null,
+   "address": "88 Canal St, Manchester M1 3HE"
+  },
+  {
+   "id": "A1702",
+   "customer_id": "C5",
+   "items": [
+    {
+     "sku": "PAN-72",
+     "name": "frying pan",
+     "qty": 1,
+     "price": 35.0
+    }
+   ],
+   "total": 35.0,
+   "status": "placed",
+   "delivered_at": null,
+   "address": "9 Orchard Rd, Singapore 238823"
+  },
+  {
+   "id": "A1703",
+   "customer_id": "C1",
+   "items": [
+    {
+     "sku": "CLK-73",
+     "name": "wall clock",
+     "qty": 1,
+     "price": 27.0
+    }
+   ],
+   "total": 27.0,
+   "status": "placed",
+   "delivered_at": null,
+   "address": "14 Park Lane, Pune 411001"
+  },
+  {
+   "id": "A1801",
+   "customer_id": "C2",
+   "items": [
+    {
+     "sku": "DRL-81",
+     "name": "drill",
+     "qty": 1,
+     "price": 99.0
+    }
+   ],
+   "total": 99.0,
+   "status": "shipped",
+   "delivered_at": null,
+   "address": "3 Mill Road, Cambridge CB1 2AD"
+  },
+  {
+   "id": "A1802",
+   "customer_id": "C6",
+   "items": [
+    {
+     "sku": "SPK-82",
+     "name": "smart speaker",
+     "qty": 1,
+     "price": 79.0
+    }
+   ],
+   "total": 79.0,
+   "status": "shipped",
+   "delivered_at": null,
+   "address": "21 Allen Ave, Lagos 100271"
+  },
+  {
+   "id": "A1901",
+   "customer_id": "C7",
+   "items": [
+    {
+     "sku": "GEN-9",
+     "name": "item",
+     "qty": 1,
+     "price": 20.0
+    }
+   ],
+   "total": 20.0,
+   "status": "shipped",
+   "delivered_at": null,
+   "address": "Torstrasse 40, 10119 Berlin"
+  },
+  {
+   "id": "A1902",
+   "customer_id": "C8",
+   "items": [
+    {
+     "sku": "GEN-9",
+     "name": "item",
+     "qty": 1,
+     "price": 20.0
+    }
+   ],
+   "total": 20.0,
+   "status": "delivered",
+   "delivered_at": "2026-10-03",
+   "address": "Al Wasl Rd 12, Dubai"
+  },
+  {
+   "id": "A1903",
+   "customer_id": "C4",
+   "items": [
+    {
+     "sku": "GEN-9",
+     "name": "item",
+     "qty": 1,
+     "price": 20.0
+    }
+   ],
+   "total": 20.0,
+   "status": "placed",
+   "delivered_at": null,
+   "address": "Calle Mayor 5, 28013 Madrid"
+  },
+  {
+   "id": "A1904",
+   "customer_id": "C3",
+   "items": [
+    {
+     "sku": "GEN-9",
+     "name": "item",
+     "qty": 1,
+     "price": 20.0
+    }
+   ],
+   "total": 20.0,
+   "status": "cancelled",
+   "delivered_at": null,
+   "address": "88 Canal St, Manchester M1 3HE"
+  }
+ ]
+}

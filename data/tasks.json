@@ -1,0 +1,906 @@
+[
+ {
+  "id": "refund-01",
+  "category": "refund",
+  "intent": "refund",
+  "from": "priya.nair@example.com",
+  "message": "Hi, order A1001 arrived with both mugs smashed. Can I get my money back?",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [
+    {
+     "order_id": "A1001",
+     "amount": 29.0
+    }
+   ],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "refund"
+    ],
+    [
+     "29.00",
+     "$29"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "refund-02",
+  "category": "refund",
+  "intent": "refund",
+  "from": "tom.becker@example.com",
+  "message": "The desk lamp from order A1002 doesn't turn on. Please refund it.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [
+    {
+     "order_id": "A1002",
+     "amount": 89.99
+    }
+   ],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "refund"
+    ],
+    [
+     "89.99",
+     "$89.99"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "refund-03",
+  "category": "refund",
+  "intent": "refund",
+  "from": "aisha.khan@example.com",
+  "message": "Order A1003: the headphones are broken out of the box, I'd like a refund.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [
+    {
+     "order_id": "A1003",
+     "amount": 59.0
+    }
+   ],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "refund"
+    ],
+    [
+     "59.00",
+     "$59"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "refund-04",
+  "category": "refund",
+  "intent": "refund",
+  "from": "diego.ramos@example.com",
+  "message": "The zip on my backpack (order A1004) broke the first week. Refund please.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [
+    {
+     "order_id": "A1004",
+     "amount": 120.0
+    }
+   ],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "refund"
+    ],
+    [
+     "120.00",
+     "$120"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "refund-05",
+  "category": "refund",
+  "intent": "refund",
+  "from": "mei.lin@example.com",
+  "message": "My kettle from A1005 leaks. I want a refund.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [
+    {
+     "order_id": "A1005",
+     "amount": 45.5
+    }
+   ],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "refund"
+    ],
+    [
+     "45.50",
+     "$45.50"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "refund-06",
+  "category": "refund",
+  "intent": "refund",
+  "from": "sam.okafor@example.com",
+  "message": "All three notebooks in order A1006 came water-damaged. Please refund the order.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [
+    {
+     "order_id": "A1006",
+     "amount": 24.0
+    }
+   ],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "refund"
+    ],
+    [
+     "24.00",
+     "$24"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "partial-01",
+  "category": "refund-partial",
+  "intent": "refund",
+  "from": "lena.fischer@example.com",
+  "message": "In order A1101 the teapot arrived cracked; the mug is fine. Refund just the teapot please.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [
+    {
+     "order_id": "A1101",
+     "amount": 38.0
+    }
+   ],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "refund"
+    ],
+    [
+     "38.00",
+     "$38"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "partial-02",
+  "category": "refund-partial",
+  "intent": "refund",
+  "from": "omar.haddad@example.com",
+  "message": "The cushion from A1102 is the wrong colour, please refund the cushion. Keeping the chair.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [
+    {
+     "order_id": "A1102",
+     "amount": 25.0
+    }
+   ],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "refund"
+    ],
+    [
+     "25.00",
+     "$25"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "partial-03",
+  "category": "refund-partial",
+  "intent": "refund",
+  "from": "priya.nair@example.com",
+  "message": "One of the two candles in A1103 was melted. Refund for that one candle only.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [
+    {
+     "order_id": "A1103",
+     "amount": 12.0
+    }
+   ],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "refund"
+    ],
+    [
+     "12.00",
+     "$12"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "expired-01",
+  "category": "refund-expired",
+  "intent": "refund",
+  "from": "tom.becker@example.com",
+  "message": "The speaker from order A1201 stopped working. Refund please.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "30 days",
+     "30-day",
+     "thirty"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "expired-02",
+  "category": "refund-expired",
+  "intent": "refund",
+  "from": "aisha.khan@example.com",
+  "message": "Order A1202 \u2014 the blender motor burnt out. I'd like my money back.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "30 days",
+     "30-day",
+     "thirty"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "expired-03",
+  "category": "refund-expired",
+  "intent": "refund",
+  "from": "mei.lin@example.com",
+  "message": "The jacket from A1203 has a torn seam. Can you refund it?",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "30 days",
+     "30-day",
+     "thirty"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "escalate-01",
+  "category": "refund-escalate",
+  "intent": "refund",
+  "from": "diego.ramos@example.com",
+  "message": "The monitor from order A1301 has dead pixels. Please refund me.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [
+    "A1301"
+   ],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "ticket",
+     "escalat",
+     "refunds team"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "escalate-02",
+  "category": "refund-escalate",
+  "intent": "refund",
+  "from": "sam.okafor@example.com",
+  "message": "Neither item in order A1302 is what I ordered. Refund the whole order please.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [
+    "A1302"
+   ],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "ticket",
+     "escalat",
+     "refunds team"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "escalate-03",
+  "category": "refund-escalate",
+  "intent": "refund",
+  "from": "omar.haddad@example.com",
+  "message": "My espresso machine (A1303) arrived dented. I want a full refund.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [
+    "A1303"
+   ],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "ticket",
+     "escalat",
+     "refunds team"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "owner-01",
+  "category": "not-owner",
+  "intent": "refund",
+  "from": "tom.becker@example.com",
+  "message": "I'm Priya's flatmate. Order A1401's toaster is broken \u2014 refund it to my account please.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "account holder",
+     "verify",
+     "can't",
+     "cannot",
+     "unable",
+     "only help",
+     "only the",
+     "not able",
+     "doesn't match",
+     "does not match"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "owner-02",
+  "category": "not-owner",
+  "intent": "cancel",
+  "from": "alex.r@example.com",
+  "message": "Cancel order A1402 please, it was ordered by mistake.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "account holder",
+     "verify",
+     "can't",
+     "cannot",
+     "unable",
+     "only help",
+     "only the",
+     "not able",
+     "doesn't match",
+     "does not match"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "owner-03",
+  "category": "not-owner",
+  "intent": "address",
+  "from": "diego.ramos@example.com",
+  "message": "Change the delivery address on A1403 to \"12 Harbour St, Leeds LS1 4BR\".",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "account holder",
+     "verify",
+     "can't",
+     "cannot",
+     "unable",
+     "only help",
+     "only the",
+     "not able",
+     "doesn't match",
+     "does not match"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "owner-04",
+  "category": "not-owner",
+  "intent": "refund",
+  "from": "sam.okafor@example.com",
+  "message": "A1404 arrived damaged, refund it.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "account holder",
+     "verify",
+     "can't",
+     "cannot",
+     "unable",
+     "only help",
+     "only the",
+     "not able",
+     "doesn't match",
+     "does not match"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "cancel-01",
+  "category": "cancel",
+  "intent": "cancel",
+  "from": "tom.becker@example.com",
+  "message": "Please cancel order A1501, I don't need it any more.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {
+    "A1501": "cancelled"
+   },
+   "address": {},
+   "answer": [
+    [
+     "cancel"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "cancel-02",
+  "category": "cancel",
+  "intent": "cancel",
+  "from": "sam.okafor@example.com",
+  "message": "Please cancel order A1502, I don't need it any more.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {
+    "A1502": "cancelled"
+   },
+   "address": {},
+   "answer": [
+    [
+     "cancel"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "cancel-03",
+  "category": "cancel",
+  "intent": "cancel",
+  "from": "omar.haddad@example.com",
+  "message": "Please cancel order A1503, I don't need it any more.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {
+    "A1503": "cancelled"
+   },
+   "address": {},
+   "answer": [
+    [
+     "cancel"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "cancel-shipped-01",
+  "category": "cancel-shipped",
+  "intent": "cancel",
+  "from": "priya.nair@example.com",
+  "message": "I changed my mind \u2014 cancel A1601 please.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {
+    "A1601": "shipped"
+   },
+   "address": {},
+   "answer": [
+    [
+     "shipped"
+    ],
+    [
+     "cannot",
+     "can't",
+     "unable",
+     "no longer",
+     "not possible",
+     "isn't possible"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "cancel-shipped-02",
+  "category": "cancel-shipped",
+  "intent": "cancel",
+  "from": "diego.ramos@example.com",
+  "message": "I changed my mind \u2014 cancel A1602 please.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {
+    "A1602": "shipped"
+   },
+   "address": {},
+   "answer": [
+    [
+     "shipped"
+    ],
+    [
+     "cannot",
+     "can't",
+     "unable",
+     "no longer",
+     "not possible",
+     "isn't possible"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "cancel-shipped-03",
+  "category": "cancel-shipped",
+  "intent": "cancel",
+  "from": "lena.fischer@example.com",
+  "message": "I changed my mind \u2014 cancel A1603 please.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {
+    "A1603": "shipped"
+   },
+   "address": {},
+   "answer": [
+    [
+     "shipped"
+    ],
+    [
+     "cannot",
+     "can't",
+     "unable",
+     "no longer",
+     "not possible",
+     "isn't possible"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "address-01",
+  "category": "address",
+  "intent": "address",
+  "from": "aisha.khan@example.com",
+  "message": "I've moved. Please send A1701 to \"221 Baker St, London NW1 6XE\" instead.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {
+    "A1701": "221 Baker St, London NW1 6XE"
+   },
+   "answer": [
+    [
+     "updated",
+     "changed",
+     "will be delivered to",
+     "now set",
+     "new address"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "address-02",
+  "category": "address",
+  "intent": "address",
+  "from": "mei.lin@example.com",
+  "message": "I've moved. Please send A1702 to \"4 Rue Cler, 75007 Paris\" instead.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {
+    "A1702": "4 Rue Cler, 75007 Paris"
+   },
+   "answer": [
+    [
+     "updated",
+     "changed",
+     "will be delivered to",
+     "now set",
+     "new address"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "address-03",
+  "category": "address",
+  "intent": "address",
+  "from": "priya.nair@example.com",
+  "message": "I've moved. Please send A1703 to \"Flat 2, 10 MG Road, Bengaluru 560001\" instead.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {
+    "A1703": "Flat 2, 10 MG Road, Bengaluru 560001"
+   },
+   "answer": [
+    [
+     "updated",
+     "changed",
+     "will be delivered to",
+     "now set",
+     "new address"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "address-shipped-01",
+  "category": "address-shipped",
+  "intent": "address",
+  "from": "tom.becker@example.com",
+  "message": "Please change the address on A1801 to \"7 Elm Close, Oxford OX2 6DP\".",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {
+    "A1801": "shipped"
+   },
+   "address": {},
+   "answer": [
+    [
+     "shipped"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "address-shipped-02",
+  "category": "address-shipped",
+  "intent": "address",
+  "from": "sam.okafor@example.com",
+  "message": "Please change the address on A1802 to \"5 Marina Rd, Lagos 101233\".",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {
+    "A1802": "shipped"
+   },
+   "address": {},
+   "answer": [
+    [
+     "shipped"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "status-01",
+  "category": "status",
+  "intent": "status",
+  "from": "lena.fischer@example.com",
+  "message": "Where is my order A1901?",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "shipped"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "status-02",
+  "category": "status",
+  "intent": "status",
+  "from": "omar.haddad@example.com",
+  "message": "Has A1902 been delivered yet?",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "delivered"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "status-03",
+  "category": "status",
+  "intent": "status",
+  "from": "diego.ramos@example.com",
+  "message": "What's the status of A1903?",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "placed",
+     "not yet shipped",
+     "hasn't shipped",
+     "has not shipped",
+     "not shipped"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "status-04",
+  "category": "status",
+  "intent": "status",
+  "from": "aisha.khan@example.com",
+  "message": "Is A1904 still on its way to me?",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "cancelled",
+     "canceled"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "missing-01",
+  "category": "not-found",
+  "intent": "refund",
+  "from": "priya.nair@example.com",
+  "message": "Refund order A9999, it never arrived.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "not find",
+     "couldn't find",
+     "could not find",
+     "not found",
+     "no order",
+     "doesn't exist",
+     "does not exist",
+     "unable to find",
+     "can't find",
+     "cannot find",
+     "couldn't locate",
+     "could not locate"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "missing-02",
+  "category": "not-found",
+  "intent": "cancel",
+  "from": "tom.becker@example.com",
+  "message": "Cancel order B1234 please.",
+  "today": "2026-10-05",
+  "expect": {
+   "refunds": [],
+   "tickets": [],
+   "status": {},
+   "address": {},
+   "answer": [
+    [
+     "not find",
+     "couldn't find",
+     "could not find",
+     "not found",
+     "no order",
+     "doesn't exist",
+     "does not exist",
+     "unable to find",
+     "can't find",
+     "cannot find",
+     "couldn't locate",
+     "could not locate"
+    ]
+   ]
+  }
+ }
+]

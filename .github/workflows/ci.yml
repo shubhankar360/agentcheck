@@ -1,0 +1,29 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install pytest anthropic
+      - run: python -m pytest -q
+      # The generated task files must match the generator, and the committed
+      # report must match a fresh run of the reference agents.
+      - run: python data/build.py && git diff --exit-code data/
+      - run: |
+          python -m agentcheck run careful --out /tmp/careful.jsonl > /dev/null
+          python -m agentcheck run hasty --out /tmp/hasty.jsonl > /dev/null
+          python -m agentcheck run flaky --trials 8 --out /tmp/flaky.jsonl > /dev/null
+          python -m agentcheck report /tmp/careful.jsonl /tmp/hasty.jsonl /tmp/flaky.jsonl > /tmp/report.md
+          diff <(sed 's/`[a-z]*`//' results/report.md) <(sed 's/`[a-z]*`//' /tmp/report.md)
